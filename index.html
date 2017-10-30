@@ -1,47 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>Index Page</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style/css">
+	<meta charset="utf-8">
+	<!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"> -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
 	<style type="text/css">
 
-	h3, h4 {
+	body {
+		background-image: url("assets/images/vintage-concrete.png");
+		background-repeat: repeat;
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	li {
+		float: left;
+	}
+
+	li a {
+		display: block;
+		text-align: center;
+		padding: 5px;
+		text-decoration: none;
+	}
+
+	li a:hover {
+		color: red;
+	}
+
+	h2, h3 {
 		color: #4aaaa5;
+	}
+
+	.p {
+		font-family: 'Arial, Helvetica Neue, Helvetica, sans-serif';
+		color: #777777;
 	}
 
 	#mainContainer {
 		position: relative;
-		top: 40px;
+		top: 20px;
 		margin-left: auto;
 		margin-right: auto;
 		width: 960px;
-		height: auto;
-		background-color: gray;
-		border-bottom: 30px;
-		border-color: #4aaaa5;
+		height: 400px;
+		background-image: url(/assetsimages/vertical-waves.png);
+		background-repeat: repeat;
+
 	}
 
 	#headerContainer {
-		position: relative;
-		top: 0px;
 		width: 960px;
 		margin-left: auto;
 		margin-right: auto;
-		height: auto;
+		height: 40px;
 		background-color: white;
+		border-style: solid;
+		border: 2px;	
+		border-color: #ccccccc;
 
 	}
+
 	#footer {
 		position: relative;
-		top: 5px;
-		margin-right: auto;
-		margin-left: auto;
+		border-top: 10px;
+		border-style: solid;
+		border-color: #4aaaa5;
 		background-color: #666666;
 		width: 960px;
 		height: 30px;
-		padding-top: 10px;
-		padding-bottom: 10px;
+		margin-left: auto;
+		margin-right: auto;
 		text-align: center;
+		vertical-align: middle;
 		color: white;
 		font: 'Arial';
 		font-size: 10px;
@@ -49,74 +88,96 @@
 
 	#namebox {
 		float: left;
-		height: auto;
+		height: 40px;
 		width: auto;
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
 		background-color: #4aaaa5;
-		font: 'Georgia';
+		font-family: 'Georgia, Times, Times New Roman, serif';
 		font-weight: bold;
-		font-size: 24px;
+		font-size: 30px;
+		vertical-align: middle;
 		color: white;
 		
+	}
+
+	#navbox {
+		float: right;
+		height: 40px;
 	}
 
 	#leftcolumn {
 		position: relative;
 		width: 650px;
-		height: 200px;
+		height: 350px;
 		background-color: white;
-		top: 20px;
-		margin-left: 20px;
+		top: 5px;
+		padding-left: 20px;
+		float: left;
 
 	}
 
 	#rightcolumn {
-		position: absolute;
-		margin-left: 690px;
-		width: 270px;
+		position: relative;
+		width: 220px;
 		background-color: white;
-		top: 20px;
+		top: 5px;
+		float: right;
+		padding-left: 20px;
 
 	}
 </style>
+
 </head>
 
-<body bgcolor="yellow">
+<body>
 	
 	<div id = "headerContainer">
 
 		<div id = "namebox">
-			bill moffa
+			Bill Moffa
 		</div>  <!-- end of div namebox -->
+
+		<div id = "navbox">
+			<ul>
+				<li><a href="#home">About</a></li>
+				<li><a href="#news">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>  <!-- end of div navbox -->
 
 	</div>  <!-- end of div headerContainer -->
 	
 	<div id = "mainContainer">
 		
 		<div id = "leftcolumn">
-			ghjhgjghjhghgjgjh<br>
-			ghjhgjghjhghgjgjh<br>
-			ghjhgjghjhghgjgjh<br>
-			ghjhgjghjhghgjgjh<br>
-			ghjhgjghjhghgjgjh<br>
-			ghjhgjghjhghgjgjh<br>
-			ghjhgjghjhghgjgjh<br>
-			ghjhgjghjhghgjgjh<br>
-			ghjhgjghjhghgjgjh<br>
-			ghjhgjghjhghgjgjh<br>
-			ghjhgjghjhghgjgjh<br>
+			<h2>About Me</h2>
+			<hr>
+			<img src="assets/images/moffa.jpeg" style="float:left;width:150px;height:200px;padding:10px">
+			<p>I have been paid as a software developer for the last twenty years. Now you noticed that I did not write that 'I worked' and the reason is I enjoyed every minute of it .. and still do today!</p>
+			<p>I have said this to many young people who are deciding on a career, and that is choose something that you love to do and you will never 'work' for living</p>
+			<p>Now I am not saying it was all easy - in fact at times it was very difficult - but I love to be challenged to figure out a solution to problem.</p>
+			<p>I never regreted chossing this profession. I grew up in the Bronx NY never dreaming that I travel the world - and I did and it was because I did something that I love.</p>
+			<br>
 		</div>  <!-- end of div leftcolumn -->
 		
 		<div id = "rightcolumn">
 			<center>
-				<h4>Connect With Me</h4>
-			</center>
+				<h3>Connect With Me</h3>
+			</center>	
+			<ul>
+				<li><a href="#home"><img src="assets/images/colorgit.png" style="float:left;width:60px;height:60px"></a></li>
+				<li><a href="#home"><img src="assets/images/colorli.png" style="float:left;width:60px;height:60px;"></a></li>
+				<li><a href="#home"><img src="assets/images/colorso.png" style="float:left;width:60px;height:60px;"></a></li>
+			</ul>
+			<br>
 		</div>  <!-- end of div rightcolumn -->
-<div id = "footer">
-copyright 2017, Bill Moffa
-</div>  <!-- end of div footer -->
+
+
 	</div>  <!-- end of div mainContainer -->
+	<div id = "footer">
+		Copyright 2017, Bill Moffa
+	</div>  <!-- end of div footer -->
 
 
 </body>
